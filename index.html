@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+    <title>Leaning Bootstrap</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+      <div class="container">
+        <a href="#" class="navbar-brand">BOOTSTRAP</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a href="" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="container py-3 d-flex flex-wrap gap-3">
+        <div class="border border-primary border-2 shadow-sm p-3 w-25">
+          Box 1
+        </div>
+
+        <div class="bg-dark text-white p-3 w-25">Box 2</div>
+
+        <div class="d-inline-block bg-warning p-3">Inline-block Box</div>
+
+        <div class="bg-success text-white p-3 w-50 h-25">Box 4</div>
+      </section>
+
+      <section class="container py-4">
+        <div class="d-flex flex-column flex-md-row gap-3 align-items-center">
+          <div class="d-flex gap-2">
+            <button class="btn btn-secondary">Filter</button>
+            <button class="btn btn-secondary">Sort</button>
+          </div>
+          <div class="flex-fill">
+            <input class="form-control" placeholder="Search here..." />
+          </div>
+          <div class="d-flex gap-2">
+            <button class="btn btn-outline-primary">Login</button
+            ><button class="btn btn-primary">Signup</button>
+          </div>
+        </div>
+      </section>
+      <div class="container">
+        <div class="row m-1">
+          <div class="col-12 col-md-6 bg-info-subtle">Left Col</div>
+          <div class="col-12 col-md-6 bg-danger-subtle">Right Col</div>
+        </div>
+      </div>
+      <section class="container py-2">
+        <div class="d-flex justify-content-center flex-wrap gap-2">
+          <button class="btn btn-primary">Button</button>
+          <button class="btn btn-secondary">Button</button>
+          <button class="btn btn-danger">Button</button>
+          <button class="btn btn-outline-primary">Button</button>
+          <button class="btn btn-outline-secondary">Button</button>
+          <button class="btn btn-outline-danger">Button</button>
+          <button class="btn btn-outline-dark btn-sm">Button</button>
+          <button class="btn btn-outline-dark btn-lg">Button</button>
+          <button class="btn btn-warning w-100">Button</button>
+          <div class="btn-group">
+            <button class="btn btn-info">Left</button>
+            <button class="btn btn-info">Center</button>
+            <button class="btn btn-info">Right</button>
+          </div>
+        </div>
+      </section>
+      <div class="container-sm bg-light p-3 mb-3">SM Container</div>
+      <div class="container-md bg-light p-3 mb-3">MD Container</div>
+      <div class="container-lg bg-light p-3 mb-3">LG Container</div>
+      <section class="container">
+        <div
+          class="d-flex flex-column justify-content-center align-items-center py-5"
+        >
+          <h1>Welcome</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+            sunt est id ex commodi delectus quaerat maxime, repellat dolores
+            harum eius ratione aspernatur sint impedit odio, velit labore
+            laborum nobis!
+          </p>
+          <button class="btn btn-primary">Explore</button>
+        </div>
+      </section>
+
+      <section class="container py-5">
+        <h2 class="text-center mb-4">Features</h2>
+        <div class="row g-4">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Feature X</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                  consequuntur ducimus, deserunt fuga voluptatum repellendus
+                  impedit enim alias odit temporibus natus quibusdam voluptatem
+                  inventore voluptates.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Feature X</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                  consequuntur ducimus, deserunt fuga voluptatum repellendus
+                  impedit enim alias odit temporibus natus quibusdam voluptatem
+                  inventore voluptates.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Feature X</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                  consequuntur ducimus, deserunt fuga voluptatum repellendus
+                  impedit enim alias odit temporibus natus quibusdam voluptatem
+                  inventore voluptates.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="https://picsum.photos/400/250"
+                alt=""
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5>Image</h5>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Temporibus quaerat reiciendis.
+                </p>
+                <button class="btn btn-dark">Button</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-header">Header</div>
+              <div class="card-body">
+                <h5 class="card-title">Title</h5>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+              </div>
+              <div class="card-footer">Footer</div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card text-white">
+              <img
+                src="https://picsum.photos/400/250"
+                alt=""
+                class="card-img"
+              />
+              <div class="card-img-overlay">
+                <h5 class="card-title">Header</h5>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                <button class="btn btn-light">Button</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container py-3">
+        <div class="alert alert-success">You did great!</div>
+        <div class="alert alert-warning alert-dismissible fade show">
+          Nothing too serious.
+          <button class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+        <div class="alert alert-dark">
+          Message <span class="badge bg-dark">NEW</span>
+        </div>
+      </section>
+      <section class="container py-3">
+        <div
+          class="d-flex gap-5 flex-wrap justify-content-center align-items-center"
+        >
+          <div class="badge bg-primary">Primary Badge</div>
+          <div class="badge bg-secondary">Secondary Badge</div>
+          <div class="badge bg-danger">Danger Badge</div>
+          <button class="btn btn-warning">
+            Notification <span class="badge bg-danger">2</span>
+          </button>
+          <div class="badge bg-info rounded-pill">Update</div>
+        </div>
+      </section>
+      <section class="container py-3">
+        <div class="list-group mb-4">
+          <div class="list-group-item">Basic Item 1</div>
+          <div class="list-group-item">Basic Item 2</div>
+          <div class="list-group-item">Basic Item 3</div>
+        </div>
+
+        <div class="list-group mb-4">
+          <a href="#" class="list-group-item list-group-item-action"
+            >Action Item 1</a
+          >
+          <a href="#" class="list-group-item list-group-item-action"
+            >Action Item 2</a
+          >
+          <a href="#" class="list-group-item list-group-item-action"
+            >Action Item 3</a
+          >
+        </div>
+
+        <div class="list-group">
+          <div class="list-group-item list-group-item-primary">
+            Primary Item
+          </div>
+          <div class="list-group-item list-group-item-warning">
+            Warning Item
+          </div>
+          <div class="list-group-item list-group-item-danger">Danger Item</div>
+        </div>
+      </section>
+      <section class="container py-3">
+        <div class="progress my-1">
+          <div class="progress-bar" style="width: 50%"></div>
+        </div>
+        <div class="progress my-1">
+          <div class="progress-bar bg-success" style="width: 75%"></div>
+        </div>
+        <div class="progress my-1">
+          <div
+            class="progress-bar-striped progress-bar-animated bg-dark"
+            style="width: 80%"
+          ></div>
+        </div>
+      </section>
+      <section
+        class="container py-3 d-flex gap-3 justify-content-center align-items-center"
+      >
+        <ul class="pagination">
+          <li class="page-item disabled">
+            <span class="page-link">Previous</span>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item active"><span class="page-link">2</span></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+      </section>
+      <section class="container py-3">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Library</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Data</li>
+          </ol>
+        </nav>
+      </section>
+      <section
+        class="container py-3 d-flex gap-3 justify-content-center align-items-center"
+      >
+        <div class="spinner-border text-primary" role="status"></div>
+        <div class="spinner-grow text-success" role="status"></div>
+        <div
+          class="spinner-border spinner-border-sm text-danger"
+          role="status"
+        ></div>
+      </section>
+      <section class="container py-3">
+        <table class="table table-striped table-hover">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Item</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Product A</td>
+              <td>Available</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Product B</td>
+              <td>Pending</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Product C</td>
+              <td>Sold Out</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section
+        class="container py-3 d-flex gap-3 justify-content-center align-items-center"
+      >
+        <img src="https://picsum.photos/250" class="img-fluid" alt="" />
+
+        <img src="https://picsum.photos/250" class="img-thumbnail" alt="" />
+
+        <img src="https://picsum.photos/250" class="rounded-circle" alt="" />
+      </section>
+      <section class="container py-3">
+        <div class="ratio ratio-16x9 mb-3">
+          <iframe
+            src="https://www.youtube.com/embed/-qfEOE4vtxE"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div class="row g-3">
+          <div class="col-12 col-md-6">
+            <div class="ratio ratio-16x9">
+              <iframe
+                src="https://www.youtube.com/embed/-qfEOE4vtxE"
+                title="Video 1"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <div class="ratio ratio-4x3">
+              <iframe
+                src="https://www.youtube.com/embed/-qfEOE4vtxE"
+                title="Video 2"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container py-3">
+        <div class="accordion" id="myAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button"
+                data-bs-toggle="collapse"
+                data-bs-target="#accOne"
+              >
+                Accordion Item #1
+              </button>
+            </h2>
+            <div
+              id="accOne"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#myAccordion"
+            >
+              <div class="accordion-body">
+                This is the first accordion item.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                data-bs-toggle="collapse"
+                data-bs-target="#accTwo"
+              >
+                Accordion Item #2
+              </button>
+            </h2>
+            <div
+              id="accTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#myAccordion"
+            >
+              <div class="accordion-body">
+                This is the second accordion item.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="container py-3">
+        <div class="dropdown">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Actions
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#">Action 1</a></li>
+            <li><a class="dropdown-item" href="#">Action 2</a></li>
+            <li><a class="dropdown-item" href="#">Action 3</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- Modal Practice -->
+      <div class="container py-4">
+        <!-- Trigger Button -->
+        <button
+          class="btn btn-primary"
+          data-bs-toggle="modal"
+          data-bs-target="#myModal"
+        >
+          Open Modal
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Modal Title</h5>
+                <button class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+
+              <div class="modal-body">This is a Bootstrap modal example.</div>
+
+              <div class="modal-footer">
+                <button class="btn btn-secondary" data-bs-dismiss="modal">
+                  Close
+                </button>
+                <button class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
