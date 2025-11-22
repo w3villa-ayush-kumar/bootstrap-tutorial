@@ -1,7 +1,5 @@
 # 📘 Bootstrap 5 — Learning Documentation
 
-_(Progress Log)_
-
 ---
 
 ## 1. Containers & Grid System
