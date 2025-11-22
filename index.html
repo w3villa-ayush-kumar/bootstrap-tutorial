@@ -420,9 +420,7 @@
           </ul>
         </div>
       </div>
-      <!-- Modal Practice -->
       <div class="container py-4">
-        <!-- Trigger Button -->
         <button
           class="btn btn-primary"
           data-bs-toggle="modal"
@@ -431,7 +429,6 @@
           Open Modal
         </button>
 
-        <!-- Modal -->
         <div class="modal fade" id="myModal" tabindex="-1">
           <div class="modal-dialog">
             <div class="modal-content">
@@ -452,6 +449,197 @@
           </div>
         </div>
       </div>
+      <div class="container py-4">
+        <button
+          class="btn btn-dark"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#myOffcanvas"
+        >
+          Open Menu
+        </button>
+
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="myOffcanvas">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Menu</h5>
+            <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+          </div>
+
+          <div class="offcanvas-body">
+            This is an offcanvas sidebar.
+            <button class="btn btn-primary mt-3" data-bs-dismiss="offcanvas">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Carousel Practice -->
+      <div class="container py-4">
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+          <!-- Indicators -->
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#myCarousel"
+              data-bs-slide-to="0"
+              class="active"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#myCarousel"
+              data-bs-slide-to="1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#myCarousel"
+              data-bs-slide-to="2"
+            ></button>
+          </div>
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="https://picsum.photos/800/300?random=1"
+                class="d-block w-100"
+                alt=""
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://picsum.photos/800/300?random=2"
+                class="d-block w-100"
+                alt=""
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://picsum.photos/800/300?random=3"
+                class="d-block w-100"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+      <section class="container py-5">
+        <h3 class="mb-3">Bootstrap Form Practice</h3>
+
+        <div class="mb-3">
+          <label class="form-label">Name</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Enter your name"
+          />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            placeholder="example@mail.com"
+          />
+          <div class="form-text">We will not share your email.</div>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Select Role</label>
+          <select class="form-select">
+            <option>Developer</option>
+            <option>Designer</option>
+            <option>Manager</option>
+          </select>
+        </div>
+
+        <div class="form-check mb-3">
+          <input type="checkbox" class="form-check-input" id="chk1" />
+          <label class="form-check-label" for="chk1"
+            >Subscribe to newsletter</label
+          >
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label d-block">Gender</label>
+
+          <div class="form-check form-check-inline">
+            <input
+              type="radio"
+              class="form-check-input"
+              name="gender"
+              id="male"
+            />
+            <label class="form-check-label" for="male">Male</label>
+          </div>
+
+          <div class="form-check form-check-inline">
+            <input
+              type="radio"
+              class="form-check-input"
+              name="gender"
+              id="female"
+            />
+            <label class="form-check-label" for="female">Female</label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Message</label>
+          <textarea class="form-control" rows="3"></textarea>
+        </div>
+
+        <button class="btn btn-primary w-100">Submit</button>
+      </section>
+      <section class="container py-5">
+        <div class="row">
+          <!-- Navigation -->
+          <div class="col-3">
+            <nav id="spyNav" class="nav flex-column position-sticky top-0">
+              <a class="nav-link active" href="#sec1">Section 1</a>
+              <a class="nav-link" href="#sec2">Section 2</a>
+              <a class="nav-link" href="#sec3">Section 3</a>
+            </nav>
+          </div>
+
+          <!-- Scrollable Content -->
+          <div
+            class="col-9"
+            data-bs-spy="scroll"
+            data-bs-target="#spyNav"
+            data-bs-smooth-scroll="true"
+            tabindex="0"
+            style="height: 300px; overflow-y: scroll"
+          >
+            <h4 id="sec1">Section 1</h4>
+            <p class="mb-5">
+              Lorem ipsum dolor sit amet... (repeat to fill space)
+            </p>
+
+            <h4 id="sec2">Section 2</h4>
+            <p class="mb-5">More content for testing scrollspy...</p>
+
+            <h4 id="sec3">Section 3</h4>
+            <p class="mb-5">And more content...</p>
+          </div>
+        </div>
+      </section>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>

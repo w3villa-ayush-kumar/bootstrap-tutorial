@@ -161,3 +161,90 @@ _(Progress Log)_
 - Built using a `dropdown` wrapper containing a trigger element with `data-bs-toggle="dropdown"`.
 - Menu items are defined inside a `.dropdown-menu` with each option as a `.dropdown-item`.
 - Alignment utilities like `dropdown-menu-end` allow positioning the menu to the right.
+
+### 3.18 Modal
+
+- Modals display content in a centered popup overlay.
+- Triggered using buttons with `data-bs-toggle="modal"` and `data-bs-target="#modalId"`.
+- The modal structure includes `.modal-dialog` and `.modal-content` wrappers.
+- Sections like `.modal-header`, `.modal-body`, and `.modal-footer` organize content.
+- Closing behavior uses `data-bs-dismiss="modal"` on buttons or the close icon.
+
+### 3.19 Offcanvas
+
+- Offcanvas panels slide in from the left, right, top, or bottom of the screen.
+- Triggered using `data-bs-toggle="offcanvas"` with a matching `data-bs-target="#id"`.
+- Structure includes `.offcanvas-header` and `.offcanvas-body` for organized content.
+- Supports dismiss actions using `data-bs-dismiss="offcanvas"`.
+- Common uses include navigation menus, filters, and side panels.
+
+### 3.20 Carousel
+
+- Carousels create sliding presentations of images or content.
+- Built with a `carousel` wrapper containing `.carousel-inner` and multiple `.carousel-item` elements.
+- The first slide is marked using `.active`.
+- Navigation controls (`carousel-control-prev` / `carousel-control-next`) allow manual slide switching.
+- Indicators (dots) are added using `.carousel-indicators` for quick navigation.
+- Supports `data-bs-ride="carousel"` for automatic cycling.
+
+### 3.21 Popovers
+
+- Popovers display small floating panels containing a title and message.
+- Activated using elements with `data-bs-toggle="popover"`.
+- Popovers require JavaScript initialization to function.
+- Useful for offering additional context or explanations without cluttering the UI.
+
+### 3.22 Tooltips
+
+- Tooltips show brief hint text on hover or focus.
+- Enabled by adding `data-bs-toggle="tooltip"` to an element.
+- Placement can be controlled using `data-bs-placement` (top, bottom, left, right).
+- Require JavaScript initialization like popovers.
+- Best used for short helper text or clarifications.
+
+### 3.23 Toasts
+
+- Toasts are lightweight notification elements that briefly appear on the screen.
+- They support auto-hide behavior and manual dismissal.
+- Structure includes `.toast`, `.toast-header`, and `.toast-body`.
+- Triggered and controlled via Bootstrap’s Toast JavaScript API.
+
+### 3.24 Scrollspy
+
+- Scrollspy automatically updates navigation links based on scroll position.
+- Requires `data-bs-spy="scroll"` and a `data-bs-target` pointing to a navigation element.
+- Highlights the active section as the user scrolls through content.
+- Works inside any scrollable container, not just the body.
+
+## 4. Forms
+
+### 4.1 Form Controls
+
+- Bootstrap styles inputs using `form-control` for text fields, emails, passwords, and textareas.
+- Labels receive consistent styling with `form-label`.
+- Helper text uses `form-text` for subtle guidance.
+
+### 4.2 Select Menus
+
+- Styled using `form-select`.
+- Automatically match the styling of other form controls.
+
+### 4.3 Checkboxes & Radios
+
+- Built using the `form-check` wrapper.
+- Inputs use `form-check-input` and labels use `form-check-label`.
+- `form-check-inline` places multiple options on the same line.
+
+### 4.4 Textarea
+
+- Styled with `form-control` and supports adjustable `rows`.
+
+### 4.5 Validation States
+
+- `is-valid` and `is-invalid` provide visual feedback.
+- Can be paired with `.valid-feedback` or `.invalid-feedback`.
+
+### 4.6 Submit Buttons
+
+- Any Bootstrap button class can be used for form submission.
+- `w-100` makes the button span the full width.
